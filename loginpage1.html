@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script
+		src="https://kit.fontawesome.com/64d58efce2.js"
+		crossorigin="anonymous"
+	></script>
+	<link rel="stylesheet" href="E:\javascript\loginpage\loginpage1.css">
+	<title>loginpage</title>
+</head>
+<body>
+	<div class="container">
+		<div class="forms-container">
+			<div class="signin-signup">
+				<form action="" class="sign-in-form">
+					<h2 class=title>Sign in </h2>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="username" >
+					</div>
+
+					<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="password" >
+
+					</div>
+
+					<input type="submit" value="login" class="btn solid">
+					<p class="social-text">Or sign in with the social platforms</p>
+					<div class="social-media">
+						<a href="#" class="social-icon">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					    <a href="#" class="social-icon">
+					    	<i class="fab fa-twitter"></i>
+					    </a>
+					    <a href="#" class="social-icon">
+					    	<i class="fab fa-google"></i>
+					    </a>
+					    <a href="#" class="social-icon">
+					    	<i class="fab fa-linkedin-in"></i>
+					    </a>
+					</div>
+				</form>
+
+		      <!----------sign-up----------->
+
+
+		      <form action="" class="sign-up-form">
+					<h2 class=title>Sign up </h2>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="username">
+					</div>
+					
+					<div class="input-field">
+						<i class="fas fa-envelope"></i>
+						<input type="text" placeholder="Email" >
+
+					</div>
+
+					<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="password" >
+
+					</div>
+
+					<input type="submit" value="sign-up" class="btn solid">
+					<p class="social-text">Or sign in with the social platforms</p>
+					<div class="social-media">
+						<a href="#" class="social-icon">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					    <a href="#" class="social-icon">
+					    	<i class="fab fa-twitter"></i>
+					    </a>
+					    <a href="#" class="social-icon">
+					    	<i class="fab fa-google"></i>
+					    </a>
+					    <a href="#" class="social-icon">
+					    	<i class="fab fa-linkedin-in"></i>
+					    </a>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+		<div class="panels-container">
+			<div class="panel left-panel">
+				<div class="content">
+					<h2>we are here</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ratione. Quos facilis laboriosam, minus, itaque accusantium earum ex optio nostrum voluptas sunt. Hic officia numquam asperiores, impedit, adipisci molestias? Aperiam!</p>
+					<h2>what are you saying</h2>
+					 <h1>nothing else</h1>
+					<button class="btn transparent" id="sign-up-button"> sign-up</button>
+				</div>
+				<img src="undraw_maker_launch_crhe.png" class="image" alt="nothing">
+			</div>
+
+			<div class="panel right-panel">
+				<div class="content">
+					<h2>we are here</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ratione. Quos facilis laboriosam, minus, itaque accusantium earum ex optio nostrum voluptas sunt. Hic officia numquam asperiores, impedit, adipisci molestias? Aperiam!</p>
+					<h2>what are you saying</h2>
+					 <h1>nothing else</h1>
+					<button class="btn transparent" id="sign-in-button"> sign-in</button>
+				</div>
+				<img src="undraw_maker_launch_crhe.png"class="image"  alt="nothing">
+			</div>
+		</div>
+	</div>
+	<script>
+		const sign_up_button=document.querySelector("#sign-up-button");
+				const sign_in_button=document.querySelector("#sign-in-button");
+						const container=document.querySelector(".container");
+
+						sign_up_button.addEventListener('click',()=>{
+							container.classList.add("sign-up-button");
+						})
+
+							sign_in_button.addEventListener('click',()=>{
+							container.classList.remove("sign-up-button");
+						})
+
+	</script>
+</body>
+</html>
